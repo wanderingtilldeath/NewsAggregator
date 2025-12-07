@@ -75,9 +75,10 @@ app.get("/news/summarized", async (req, res) => {
   }));
 
   res.json({
-    fresh: true,
-    all_articles: summarizedArticles   // IMPORTANT FIX
-  });
+  fresh: true,
+  all_articles: summarizedArticles   // <--- MUST BE THIS
+});
+
 });
 
 
